@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript">
+var image1 = new Image()
+image1.src = "1.jpg"
+var image2 = new Image()
+image2.src = "2.jpg"
+var image3 = new Image()
+image3.src = "3.jpg"
+var image4 = new Image()
+image4.src = "4.jpg"
+var image5 = new Image()
+image5.src = "5.jpg"
+var image6 = new Image()
+image6.src = "6.jpg"
+var image7 = new Image()
+image7.src = "7.jpg"
+var image8 = new Image()
+image8.src = "8.jpg"
+var image9 = new Image()
+image9.src = "9.jpg"
+var image10 = new Image()
+image10.src = "10.jpg"
+var image11 = new Image()
+image11.src = "11.jpg"
+var image12 = new Image()
+image12.src = "12.jpg"
+var image13 = new Image()
+image13.src = "13.jpg"
+var image14 = new Image()
+image14.src = "14.jpg"
+var image15 = new Image()
+image15.src = "15.jpg"
+var image16 = new Image()
+image16.src = "16.jpg"
+var image17 = new Image()
+image17.src = "17.jpg"
+var image18 = new Image()
+image18.src = "18.jpg"
+var image19 = new Image()
+image19.src = "19.jpg"
+var image20 = new Image()
+image20.src = "20.jpg"
+
+</script>
+
+<style type = "text/css">
+
+#maindiv
+{
+	background-color: WHITE;
+	width:1415px;
+	height:2000px;
+
+}
+
+#topdiv
+{
+	background-color: #eeeeee;
+	width:1415px;
+	height:120px;
+}
+
+#lefttopdiv
+{
+	background-color: #eeeeee;	
+	width: 190px;
+	height: 120px;
+	float: left;
+}
+#shiftdiv
+{
+
+	background-color: #eeeeee;
+	width: 30px;
+	height: 120px;
+	float:left;
+}
+
+#righttopdiv
+{
+	background-color: #eeeeee;
+	width: 900px;
+	height: 120px;
+}
+
+#middiv
+{
+	background-color: WHITE;
+	width: 1415px;
+	height: 550px;
+}
+
+#bottomdiv
+{
+	background-color: #eeeeee;
+	width: 1415px;
+	height: 550px;
+}
+
+#login2
+{
+	width: 160px;
+	height: 160px;
+	background-color: GREY;
+	float: left;
+	
+}
+
+#bar
+{
+	background-color: #eeeeee;
+	width: 1415px;
+	height: 45px;
+}
+
+#gap1
+{
+	background-color: WHITE;
+	width: 1415px;
+	height: 15px;
+}
+
+#gap2
+{
+	background-color: WHITE;
+	width: 1415px;
+	height: 10px;
+}
+
+  @-webkit-keyframes spincube {
+    from,to  { -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+    16%      { -webkit-transform: rotateY(-90deg);                           }
+    33%      { -webkit-transform: rotateY(-90deg) rotateZ(90deg);            }
+    50%      { -webkit-transform: rotateY(-180deg) rotateZ(90deg);           }
+    66%      { -webkit-transform: rotateY(-270deg) rotateX(90deg);           }
+    83%      { -webkit-transform: rotateX(90deg);                            }
+  }
+
+  @keyframes spincube {
+    from,to {
+      -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+      -ms-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16% {
+      -moz-transform: rotateY(-90deg);
+      -ms-transform: rotateY(-90deg);
+      transform: rotateY(-90deg);
+    }
+    33% {
+      -moz-transform: rotateY(-90deg) rotateZ(90deg);
+      -ms-transform: rotateY(-90deg) rotateZ(90deg);
+      transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    50% {
+      -moz-transform: rotateY(-180deg) rotateZ(90deg);
+      -ms-transform: rotateY(-180deg) rotateZ(90deg);
+      transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66% {
+      -moz-transform: rotateY(-270deg) rotateX(90deg);
+      -ms-transform: rotateY(-270deg) rotateX(90deg);
+      transform: rotateY(-270deg) rotateX(90deg);
+    }
+    83% {
+      -moz-transform: rotateX(90deg);
+      -ms-transform: rotateX(90deg);
+      transform: rotateX(90deg);
+    }
+  }
+
+  .cubespinner {
+    -webkit-animation-name: spincube;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 12s;
+
+    animation-name: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    -webkit-transform-origin: 60px 60px 0;
+    -moz-transform-origin: 60px 60px 0;
+    -ms-transform-origin: 60px 60px 0;
+    transform-origin: 60px 60px 0;
+  }
+
+  .cubespinner div {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #ccc;
+    background: rgba(255,255,255,0.8);
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+    line-height: 120px;
+    text-align: center;
+    font-size: 100px;
+  }
+
+  .cubespinner .face1 {
+    -webkit-transform: translateZ(60px);
+    -moz-transform: translateZ(60px);
+    -ms-transform: translateZ(60px);
+    transform: translateZ(60px);
+  }
+  .cubespinner .face2 {
+    -webkit-transform: rotateY(90deg) translateZ(60px);
+    -moz-transform: rotateY(90deg) translateZ(60px);
+    -ms-transform: rotateY(90deg) translateZ(60px);
+    transform: rotateY(90deg) translateZ(60px);
+  }
+  .cubespinner .face3 {
+    -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+    -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+    -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+    transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+  }
+  .cubespinner .face4 {
+    -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+    -moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+    -ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+  }
+  .cubespinner .face5 {
+    -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+    -moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+    -ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+  }
+  .cubespinner .face6 {
+    -webkit-transform: rotateX(-90deg) translateZ(60px);
+    -moz-transform: rotateX(-90deg) translateZ(60px);
+    -ms-transform: rotateX(-90deg) translateZ(60px);
+    transform: rotateX(-90deg) translateZ(60px);
+  }
+
+  .button {
+    margin: 8px; 
+    width: 260px;
+    background-color: #f000222; 
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+ }
+
+.button1:hover {
+    background-color: black;
+    color: white;
+    
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(5,0,0,0.19);
+}
+
+.button0 {
+    margin: 0px; 
+    width: 280px;
+	height:150px;
+    background-color: black; 
+    
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+ }     
+.button2:hover {
+    background-color: white;
+    color: black;
+    
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(5,0,0,0.19);
+}
+.button3 {
+    margin: 0px; 
+    width: 240px;
+	height:140px;
+    background-color: WHITE; 
+    
+    color: BLACK;
+    padding: 10px 25px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+ }     
+.button4:hover {
+    background-color: BLACK;
+    color: WHITE;
+    
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(5,0,0,0.19);
+}
+.button5 {
+    margin: 5px; 
+    width: 80px;
+  height:40px;
+    background-color: grey; 
+    
+    color: white;
+    padding: 10px 25px;
+    float:right;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+ }     
+.button6:hover {
+    background-color: white;
+    color: black;
+    
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(5,0,0,0.19);
+}
+
+ 
+ </style>
+
+</head>
+<body onload="beChanging()">
+
+<div id = "maindiv">
+	<div id = "topdiv">
+		<div id="shiftdiv">
+			</div>
+		<div id = "lefttopdiv">
+			
+			<div class="stage" width: 120px; height: 120px;">
+<div class="cubespinner">
+  <a href = "a.html">
+<div class="face1"><img src="app.jpg" width = "120px" height = "120px"></div>
+<div class="face2"><img src="movie.jpg" width = "120px" height = "120px"></div>
+<div class="face3"><img src="game.jpg" width = "120px" height = "120px"></div>
+<div class="face4"><img src="music.jpg" width = "120px" height = "120px"></div>
+<div class="face5"><img src="book.jpg" width = "120px" height = "120px"></div>
+<div class="face6"><img src="social.jpg" width = "120px" height = "120px"></div>
+</a>
+</div>
+</div>
+			</div>
+		<div id = "righttopdiv">
+      <center>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href = "a.html"><img src="logo.jpg" width = "400px" height = "120px"></a>
+    </center>
+			</div>
+	</div>
+	
+	<div id = "gap2">
+	</div>
+	<div id = "bar">
+<button class="button button1" onclick="self.close();window.open('bquerygames.php')">Games</button>
+<button class="button button1" onclick="self.close();window.open('bquerybook.php')">Books</button>
+<button class="button button1" onclick="self.close();window.open('bquerymovie.php')">Movies</button>
+<button class="button button1" onclick="self.close();window.open('bquerymusic.php')">Music</button>
+<button class="button button1" onclick="self.close();window.open('bquerysocial.php')">Social</button>
+	</div>
+	
+	<div id = "gap1">
+	</div>
+	
+	<div id = "middiv" >
+<p><img src="1.jpg" width="1415px" height="550px" name="slide" /></p>
+<script >
+
+var step=1;
+        function slideit()
+        {
+            document.images.slide.src = eval("image"+step+".src");
+            if(step<20)
+                step++;
+            else
+                step=1;
+            setTimeout("slideit()",2000);
+        }
+        slideit();
+
+</script>
+
+</div>
+
+<div id = "gap1">
+
+</div>
+
+<div style="width:340px;float:left;height:400px;background:GREY; margin:8px;padding:10px;color:BLACK"><p><b>
+<ul><p>
+<h4><i><b>PROPERTY UPDATE</b></i></h4>
+<marquee direction="up"  >
+<ul>
+<li>Wave City Center Master Plan Got Approved by Noida Authority.</li>
+<li>DLF to Hike Rates in Gurgaon Project Despite Low Demand.</li>
+<li>Delhi Prime Location Housing Prices Down up to 20%: JLL India</li>
+<li>Property Prices Dip in Delhi. Good Time to Buy?</li>
+
+  </ul></b>
+</marquee></h2>
+
+</p>		
+
+</div>
+
+<div style="width:300px;float:left;height:180px;background:black; margin:8px;padding:10px;color:white"><p><b>
+<CENTER><button class="button3 button4" onclick="self.close();window.open('bquerygames.php')"><font face ="forte">APP OF THE DAY!</button></div>
+<div style="width:300px;float:left;height:180px;background:white; margin:8px;padding:10px;"><p><b>
+<center>
+<button class="button0 button2" onclick="self.close();window.open('bquerygames.php')"><font face ="forte">APP OF THE MONTH!</button>
+</div>
+
+<div style="width:300px;float:left;height:180px;background:black; margin:8px;padding:10px;color:white"><p><b>
+
+<center>
+<button class="button3 button4" onclick="self.close();window.open('bquerygames.php')"><font face ="forte">SIGN UP!</button>
+
+</div>
+<div style="width:300px;float:left;height:180px;background:white; margin:8px;padding:10px;color:black"><p><b>
+
+<center>
+<button class="button0 button2" onc	lick="self.close();window.open('bquerygames.php')"><font face ="forte">MOST VIEWED APP!</button>
+
+</div>
+<div style="width:300px;float:left;height:180px;background:black; margin:8px;padding:10px;color:white"><p><b>
+<center>
+<button class="button3 button4" onclick="self.close();window.open('bquerygames.php')"><font face ="forte">ABOUT US!</button>
+
+</div>
+<div style="width:300px;float:left;height:180px;background:white; margin:8px;padding:10px;color:black"><p><b>
+<center>
+<button class="button0 button2" onclick="self.close();window.open('contact.html')"><font face ="forte">CONTACT US</button>
+</div>
+
+
+
+
+
+
+
+	<div id="bottomdiv">
+		<embed src = "civil.mp4" width = "1415px" height = "550px" controls>
+		</embed> 						
+		<br><br>
+</div>
+<div><br><br>br><br><br><br><br><br>br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<align="right"><button class="button5 button6" onclick="self.close();window.open('a.html')">TOP         </button><br><br><br>
+<HR>
+<footer>
+<font color="BLACK">
+
+  <center>Copyright © 2015 appstore.com - APP STORE INDIA - APPS - All Rights Reserved.</center>
+  
+</footer>
+
+</div>
+
+</body>
+</html>

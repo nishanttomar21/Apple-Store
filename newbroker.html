@@ -1,0 +1,35 @@
+<html>
+<body ><style>
+h1 {
+    text-shadow: 0 0 3px #FF0000;
+}
+body{
+
+	
+}
+
+h3{
+	text-align: center;
+	}</style>
+<body style=" background-image: url('l9.jpg') ;color:black">
+<center><br>
+<h1> FILL THE FORM FOR THE BROKER </h1><br><br>
+<form action="newbroker.php" method="post"><strong>
+
+<pre>BROKER ID:       <t><input type="text" name="bid" placeholder="Broker ID" required><br></pre>
+<pre>BROKER NAME:     <t><input type="text" name="bname" placeholder="Broker NAME" required><br></pre>
+<pre>PROPERTY ID:     <t><input type="text" name="property_id" placeholder="Property Id" required><br></pre>
+<pre>Password:        <t><input type="password" name="password" placeholder="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" onchange="form.cpassword.pattern = this.value;"></pre>
+<pre>Confirm Password:<t><input type="password" name="cpassword" placeholder="password" id="a2"><br></pre>
+
+
+<input type="submit" value="SUBMIT" name="submit">
+</strong>
+</form>
+<br><br><br><br>
+<form action="index1.html" method="post">
+<input type="submit" value="BACK" name="BACK">
+</center></form>
+</body>
+</html>
+

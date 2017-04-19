@@ -1,0 +1,16 @@
+<html>
+<body style=" background-image: url('l1.jpg') ;color:black"><br><br>
+<center><h1> NEW SELLER FORM </h1><br><br><br><br>
+<form action="newseller.php" method="post">
+<pre>User_id:       <t> <input type="number" name="user_id" placeholder="user_id" required><br></pre>
+<pre>Property_for:  <t> <input type="text" name="property_for" placeholder="property_for" required><br></pre>
+<pre>Property_type: <t> <input type="text" name="property_type" placeholder="property_type" required><br></pre>
+<pre>Expected_cost: <t> <input type="number" name="expected_cost" placeholder="expected_cost" required><br></pre>
+<pre>Password:      	<t><input type="password" name="password" placeholder="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" onchange="form.cpassword.pattern = this.value;"></pre>
+<pre>Confirm Password:<input type="password" name="cpassword" placeholder="password" ></pre><br></b>
+
+<input type="submit" value="submit" name="submit"></center>
+</form>
+</body>
+</html>
+

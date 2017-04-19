@@ -1,0 +1,87 @@
+<html>
+
+<script>
+function matchString()
+{
+
+	var a,b,fname,sname,email;
+	a = document.getElementById("p1").value;
+	b = document.getElementById("p2").value;
+	fname=document.getElementById("t1").value;
+	sname=document.getElementById("t2").value;
+	email=document.getElementById("t3").value;
+
+	if( a != b )
+	{	
+		alert("Password Do Not Match!");
+		myForm.password.focus();
+		return false;
+	}
+
+	else if( fname != "" && sname != "" && email != "" && a != "" && b != "" && a == b )
+		return true;
+
+}
+
+function myFunction() 
+{
+
+    document.getElementById("myForm").reset();
+
+}
+</script>
+
+<style>
+div {
+    width: 300px;
+    padding: 25px;
+    border: 25px solid GREY;
+    margin: 25px;
+}
+</style>
+
+<form id="myForm" onsubmit = "return matchString(this)" action = "z.html">
+
+<body background = "back1.jpg">
+<table border = "1" align = "centre"> 
+<font color = "black">
+<br>
+<br>
+
+<center><b><u><h1 color = "BLACK">Sign Up</u></h1></b>
+<div>
+<center>
+<br>
+<br>
+<font size="4">
+<input type="text" placeholder = "First Name" id="t1" required title = "Enter Your First Name">
+<br>
+<br>
+<input type="text" placeholder = "Second Name" id="t2" required title = "Enter Your Last Name">
+<br>
+<br>
+<input type="email" placeholder = "Email" id="t3" required title = "Enter Your Email">
+<br>
+<br>
+<input type="password" placeholder = "Password" id = "p1" name = "password" required >
+<br>
+<br>
+<input type="password" placeholder = "Confirm Password" id = "p2" required >
+<br>
+<br>
+<input type="checkbox" name = "checkbox">I agree to the
+<a href = "policy.html" target = "_blank">Terms And Policy</a>
+<br>
+<br>
+<input type="reset" onclick = "myFunction()" value = "Reset">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="submit" value = "Sign Up!" onclick = "if( !this.form.checkbox.checked ){ alert('You must agree to the terms first.'); return false}">
+<br>
+<br>
+</center>
+</center>
+</div>
+</form>
+</table>
+</body>
+</html>

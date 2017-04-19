@@ -1,0 +1,44 @@
+ <html>
+ <script>
+ 
+ 
+ 
+
+	
+
+function f1()
+ {
+	var b=document.getElementById("phone").value;
+	
+	 
+	if(b.length!=10)
+	{
+	 alert("Plese Enter a valid phone number");
+	 return false;
+	}
+	
+ }
+
+
+ </script>
+<body style=" background-image: url('qwe8.jpg'); color:purple ">
+<center>
+ 
+<h1 align="center"> <font  size="72">FILL THE FORM </font></h1><b><br>
+<form  action="newuser.php" method="post" onsubmit="return f1()">
+<pre>User_id:         <input type="text" name="user_id"  required><br></pre>
+<pre>Name:            <input type="text" name="name"  required><br></pre>
+<pre>Mail:            <input type="email" name="mail" required><br></pre>
+<pre>Phone:           <input type="number" name="phone" id="phone" required><br></pre>
+<pre>Address:         <input type="text" name="address" required><br></pre>
+<pre>Age:             <input type="text" name="age" required><br></pre>
+<pre>User_type:       <input type="text" name="user_type" required><br></pre>
+<pre>City:            <input type="text" name="city" required><br></pre>
+<pre>Password:        <input type="password" name="password" placeholder="password" id="a4" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" onchange="form.cpassword.pattern = this.value;"><br></pre>
+<pre>Confirm Password:<input type="password" name="cpassword" placeholder="password" id="a2"><br></pre>
+</b>
+<input type="submit" value="submit" name="submit">
+</form></center>
+</body>
+</html>
+

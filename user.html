@@ -1,0 +1,42 @@
+<html>
+<script>
+function pass()
+{
+var t=document.getElementById("a4").value;
+if(t.length<6)
+{
+	alert("Your Password Should of 6 Characters");
+	return false;
+}
+
+}
+</script>
+<body ><style>
+h1 {
+    text-shadow: 0 0 8px black;
+}
+body{
+
+	
+}
+
+h3{
+	text-align: center;
+	}</style>
+<body style=" background-image: url('qwe6.jpg');color:brown">
+<h1 style="font-size:350%;text-align:center"> <u><b>FILL THE USER FORM</h1></u>
+<br><br>
+<form action="user.php" method="post" onsubmit="return pass()">
+<center><pre>USER ID :    <input type="text" name="user_id" placeholder="user_id"><br></pre>
+
+        <pre>Password:    <input type="password" name="password" placeholder="password" id="a4"><br></pre><br><br><br> 
+<input type="submit" value="log in" name="login">
+</form>
+<p>CLICK HERE FOR A NEW USER<a href="newuser.html"> NEW USER </a></p>
+<br><br><br><br>
+<form action="index1.html" method="post">
+<input type="submit" value="BACK" name="BACK" >
+</form></center>
+</body>
+</html>
+

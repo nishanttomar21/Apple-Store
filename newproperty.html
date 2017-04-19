@@ -1,0 +1,35 @@
+<html>
+<body style=" background-image: url('l.jpg') ;color:black">
+ <br><br>
+<center>
+<h1> FILL THE DETAILS OF THE NEW PROPERTY </h1>
+<br><br>
+<form action="newproperty.php" method="post">
+<pre>PROPERTY ID     : <t><input type="text" name="property_id" placeholder="P Id" required><br></pre>
+<pre>AREA            : <t><input type="text" name="area" placeholder="Area" required><br></pre>
+<pre>CITY            : <t><input type="text" name="city" placeholder="City" required><br></pre>
+<pre>PER_UNIT_PRICE  : <t><input type="text" name="per_unit_price" placeholder="Per Unit Price" required><br></pre>
+<pre>PROPERTY_TYPE   : <t><input type="text" name="property_type" placeholder="Property Type" required><br></pre>
+<pre>NO OF ROOMS     : <t><input type="text" name="no_of_room" placeholder="No. of rooms" required><br></pre>
+<pre>Password        : <t><input type="password" name="password" placeholder="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" onchange="form.cpassword.pattern = this.value;"></pre>
+<pre>Confirm Password: <t><input type="password" name="cpassword" placeholder="password" id="a2"></pre></b>
+
+<input type="submit" value="SUBMIT" name="submit">
+</center>
+<center>NOW ENTER THE DESCRIPTION FOR THIS PROPERTY BY CLICKING HERE <br><br>
+<button style="background-color:grey;float:center;color:white;height:3em;width:9em; transition: .5s ease; top: 350px; left: 920px;" type="button" onclick="self.close();window.open('description.html')"/>  
+DESCRIPTION 
+        </button></center>
+
+
+
+
+
+</form>
+<br><br><br><br>
+<form action="property.html" method="post">
+<input type="submit" value="BACK" name="BACK">
+</form>
+</body>
+</html>
+

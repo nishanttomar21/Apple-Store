@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 
+<style type = "text/css">
+
+#maindiv
+{
+	background-color: WHITE;
+	width:1415px;
+	height:2000px;
+
+}
+
+#topdiv
+{
+	background-color: #eeeeee;
+	width:1415px;
+	height:120px;
+}
+
+#lefttopdiv
+{
+	background-color: #eeeeee;	
+	width: 190px;
+	height: 120px;
+	float: left;
+}
+#shiftdiv
+{
+
+	background-color: #eeeeee;
+	width: 30px;
+	height: 120px;
+	float:left;
+}
+
+#righttopdiv
+{
+	background-color: #eeeeee;
+	width: 800px;
+	height: 120px;
+}
+
+#middiv
+{
+	background-color: WHITE;
+	width: 1415px;
+	height: 550px;
+}
+
+#bottomdiv
+{
+	background-color: #eeeeee;
+	width: 1415px;
+	height: 550px;
+}
+
+#login2
+{
+	width: 160px;
+	height: 160px;
+	background-color: GREY;
+	float: left;
+	
+}
+
+#bar
+{
+	background-color: lightblue;
+	width: 1415px;
+	height: 35px;
+}
+
+#gap1
+{
+	background-color: WHITE;
+	width: 1415px;
+	height: 20px;
+}
+
+#gap2
+{
+	background-color: WHITE;
+	width: 1415px;
+	height: 10px;
+}
+
+
+body {position:relative; z-index:0; color:WHITE}
+td#Pics {width:302px; height:233px; vertical-align:top}
+ 
+img#ball1 {position:absolute; border:0px; z-index:2}
+img#ball2 {position:absolute; border:0px; z-index:1}
+img#ball3 {position:absolute; border:0px; z-index:1}
+img#ball4 {position:absolute; border:0px; z-index:1}
+img#ball5 {position:absolute; border:0px; z-index:1}
+img#ball6 {position:absolute; border:0px; z-index:1}
+img#ball7 {position:absolute; border:0px; z-index:1}
+img#ball8 {position:absolute; border:0px; z-index:1}
+img#ball9 {position:absolute; border:0px; z-index:1}
+
+  @-webkit-keyframes spincube {
+    from,to  { -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+    16%      { -webkit-transform: rotateY(-90deg);                           }
+    33%      { -webkit-transform: rotateY(-90deg) rotateZ(90deg);            }
+    50%      { -webkit-transform: rotateY(-180deg) rotateZ(90deg);           }
+    66%      { -webkit-transform: rotateY(-270deg) rotateX(90deg);           }
+    83%      { -webkit-transform: rotateX(90deg);                            }
+  }
+
+  @keyframes spincube {
+    from,to {
+      -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+      -ms-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16% {
+      -moz-transform: rotateY(-90deg);
+      -ms-transform: rotateY(-90deg);
+      transform: rotateY(-90deg);
+    }
+    33% {
+      -moz-transform: rotateY(-90deg) rotateZ(90deg);
+      -ms-transform: rotateY(-90deg) rotateZ(90deg);
+      transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    50% {
+      -moz-transform: rotateY(-180deg) rotateZ(90deg);
+      -ms-transform: rotateY(-180deg) rotateZ(90deg);
+      transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66% {
+      -moz-transform: rotateY(-270deg) rotateX(90deg);
+      -ms-transform: rotateY(-270deg) rotateX(90deg);
+      transform: rotateY(-270deg) rotateX(90deg);
+    }
+    83% {
+      -moz-transform: rotateX(90deg);
+      -ms-transform: rotateX(90deg);
+      transform: rotateX(90deg);
+    }
+  }
+
+  .cubespinner {
+    -webkit-animation-name: spincube;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 12s;
+
+    animation-name: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    -webkit-transform-origin: 60px 60px 0;
+    -moz-transform-origin: 60px 60px 0;
+    -ms-transform-origin: 60px 60px 0;
+    transform-origin: 60px 60px 0;
+  }
+
+  .cubespinner div {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #ccc;
+    background: rgba(255,255,255,0.8);
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+    line-height: 120px;
+    text-align: center;
+    font-size: 100px;
+  }
+
+  .cubespinner .face1 {
+    -webkit-transform: translateZ(60px);
+    -moz-transform: translateZ(60px);
+    -ms-transform: translateZ(60px);
+    transform: translateZ(60px);
+  }
+  .cubespinner .face2 {
+    -webkit-transform: rotateY(90deg) translateZ(60px);
+    -moz-transform: rotateY(90deg) translateZ(60px);
+    -ms-transform: rotateY(90deg) translateZ(60px);
+    transform: rotateY(90deg) translateZ(60px);
+  }
+  .cubespinner .face3 {
+    -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+    -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+    -ms-transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+    transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+  }
+  .cubespinner .face4 {
+    -webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+    -moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+    -ms-transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+  }
+  .cubespinner .face5 {
+    -webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+    -moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+    -ms-transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+  }
+  .cubespinner .face6 {
+    -webkit-transform: rotateX(-90deg) translateZ(60px);
+    -moz-transform: rotateX(-90deg) translateZ(60px);
+    -ms-transform: rotateX(-90deg) translateZ(60px);
+    transform: rotateX(-90deg) translateZ(60px);
+  }
+
+  .button {
+    margin: 0px; 
+    width: 250px;
+	height: 35px;
+    background-color:WHITE ; 
+    border: 1px solid grey;
+    color: black;
+    padding: 10px 30px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+ }
+
+.button1:hover {
+    background-color: LIGHTBLUE;
+    color: ORANGE;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(5,0,0,0.19);
+}
+ 
+</style>
+<script >
+
+var A=2;
+var B=1;
+var C=1;
+var D=1;
+var E=1;
+var F=1;
+var G=1;
+var H=1;
+var I=1;
+var Temp;
+
+function beChanging()
+{
+Temp=I; I=H; H=G; G=F; F=E; E=D; D=C; C=B; B=A; A=Temp;
+ 
+document.getElementById('ball1').style.zIndex = A;
+document.getElementById('ball2').style.zIndex = B;
+document.getElementById('ball3').style.zIndex = C;
+document.getElementById('ball4').style.zIndex = D;
+document.getElementById('ball5').style.zIndex = E;
+document.getElementById('ball6').style.zIndex = F;
+document.getElementById('ball7').style.zIndex = G;
+document.getElementById('ball8').style.zIndex = H;
+document.getElementById('ball9').style.zIndex = I;
+ 
+setTimeout("beChanging()",3000);
+
+
+}
+
+</script>
+
+</head>
+<body onload="beChanging()">
+
+<div id = "maindiv">
+	<div id = "topdiv">
+		<div id="shiftdiv">
+			</div>
+		<div id = "lefttopdiv">
+			
+
+			<div class="stage" style="width: 120px; height: 120px;">
+<div class="cubespinner">
+<div class="face1">1</div>
+<div class="face2">2</div>
+<div class="face3">3</div>
+<div class="face4">4</div>
+<div class="face5">5</div>
+<div class="face6"><img src="9.jpg" width = "120px" height = "120px"></div>
+</div>
+</div>
+			</div>
+		<div id = "righttopdiv">
+			</div>
+	</div>
+	
+	<div id = "gap2">
+	</div>
+	
+	<div id = "bar">
+		<br><font COLOR="white"><h4> The Games are </h4></font>
+<br>
+<button class="button button1" onclick="self.close();window.open('bquerygames.php')">Games</button>
+<button class="button button1" onclick="self.close();window.open('bquerybooks.php')">Books</button>
+<button class="button button1" onclick="self.close();window.open('bquerymovie.php')">Movies</button>
+<button class="button button1" onclick="self.close();window.open('bquerymusic.php')">Music</button>
+<button class="button button1" onclick="self.close();window.open('bquerysocial.php')">Social</button>
+</div><BR>
+<body style= background-image: url('qaz4.jpg'); background-repeat: no-repeat;color:"cyan">
+
+<br>
+	</div>
+	
+	<div id = "gap1">
+	</div>
+	
+	<div id = "middiv" >
+
+
+	<td id="Pics">
+<img src="1.jpg" usemap ="#MP" id="ball1" width = "1415px" height = "550px">
+<img src="2.jpg" usemap ="#MS" id="ball2" width = "1415px" height = "550px">
+<img src="3.jpg" usemap ="#MF" id="ball3" width = "1415px" height = "550px">
+<img src="4.jpg" usemap ="#MM" id="ball4" width = "1415px" height = "550px">
+<img src="5.jpg" usemap ="#MP" id="ball5" width = "1415px" height = "550px">
+<img src="6.jpg" usemap ="#MS" id="ball6" width = "1415px" height = "550px">
+<img src="7.jpg" usemap ="#MF" id="ball7" width = "1415px" height = "550px">
+<img src="8.jpg" usemap ="#MM" id="ball8" width = "1415px" height = "550px">
+<img src="9.jpg" usemap ="#MM" id="ball9" width = "1415px" height = "550px">
+</td>
+</div>
+<div id = "gap1">
+</div>
+	<div id="bottomdiv">
+		<embed src = "2.mp4" width = "1415px" height = "550px" controls>
+		</embed> 						
+		
+</div>
+
+<a href = "a.html">Top!</a>
+
+</body>
+</html>
