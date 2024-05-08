@@ -1,0 +1,12 @@
+- Developed a content management system (CMS) for an Apple Store website utilising PHP. This ensured efficient content creation, editing, and maintenance.
+- Implemented data integrity measures to prevent data redundancy and maintain consistency within the Apple Store website.
+- Integrated form validation with informative pop-up messages to enhance user experience on the Apple Store website. This ensured accurate form submissions and guided error correction.
+- Leveraged Bootstrap to streamline the development process and ensure a responsive website design for the Apple Store across various devices.
+
+-   Skills:
+    - Node.js
+    - JavaScript
+    - HTML
+    - Bootstrap
+    - Cascading Style Sheets (CSS)
+    - Git
